@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<!-- morcept-design: layout=split; motion=mask -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亞巨聯合商務中心｜台中西區美村路 借址登記・獨立辦公室・會議室</title>
+<meta name="description" content="亞巨聯合商務中心位於台中市西區美村路一段22號7樓，提供公司登記地址、獨立辦公室、共享座位、會議室租借與行政代辦。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        pine: { DEFAULT: '#1D3A33', deep: '#132722', soft: '#2B4D45' },
+        stone: '#F2F0EB',
+        mist: '#E1E7E3',
+        ink: '#18201D',
+        sage: '#A9C4BA',
+        steel: { DEFAULT: '#3F6A86', deep: '#2F5168', light: '#D5E2EB' }
+      },
+      fontFamily: {
+        serif: ['"Young Serif"', '"Noto Serif TC"', 'serif'],
+        tc: ['"Noto Serif TC"', 'serif'],
+        sans: ['"Schibsted Grotesk"', '"Noto Sans TC"', 'sans-serif']
+      },
+      maxWidth: { wrap: '1310px' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: auto; }
+  body { font-family: "Schibsted Grotesk", "Noto Sans TC", sans-serif; color: #18201D; background: #F2F0EB; caret-color: #3F6A86; -webkit-font-smoothing: antialiased; }
+  ::selection { background: #3F6A86; color: #fff; }
+  :focus-visible { outline: 2px solid #3F6A86; outline-offset: 3px; border-radius: 6px; }
+  a { text-underline-offset: 0.25em; }
+  table, .num { font-variant-numeric: tabular-nums; }
+  .measure { max-width: 34em; }
+  [data-page] { display: none; }
+  [data-page].is-active { display: block; }
+
+  .btn { display: inline-flex; align-items: center; gap: .5rem; border-radius: 999px; padding: .85rem 1.5rem; font-weight: 500; transition: transform .2s cubic-bezier(.23,1,.32,1), background-color .2s, color .2s, box-shadow .2s; }
+  .btn:active, .press:active { transform: scale(.97); }
+  .btn-flow { color: #fff; background: linear-gradient(110deg, #2F5168, #3F6A86, #1D3A33, #3F6A86, #2F5168); background-size: 300% 100%; animation: flow 9s linear infinite; box-shadow: 0 10px 30px -12px rgba(19,39,34,.6); }
+  @keyframes flow { to { background-position: 300% 0; } }
+  .btn-line { border: 1px solid currentColor; }
+  @media (hover:hover) and (pointer:fine) {
+    .btn-flow:hover { box-shadow: 0 16px 34px -12px rgba(19,39,34,.7); transform: translateY(-2px); }
+    .btn-line:hover { background: #1D3A33; color: #F2F0EB; border-color: #1D3A33; }
+    .on-dark .btn-line:hover { background: #F2F0EB; color: #1D3A33; border-color: #F2F0EB; }
+    .nav-link:hover { color: #3F6A86; }
+    .item-card:hover img { transform: scale(1.04); }
+    .item-card:hover .item-arrow { transform: translateX(4px); }
+    .row-link:hover { background: #E1E7E3; }
+    .fab a:hover { transform: translateX(-4px); background: #3F6A86; }
+    .chip:hover { border-color: #1D3A33; }
+    .news-item:hover h3 { color: #3F6A86; }
+    .footer a:hover { color: #fff; }
+  }
+  .nav-link { position: relative; transition: color .2s; }
+  .nav-link.is-current::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: #3F6A86; }
+  header.shrink { box-shadow: 0 10px 30px -18px rgba(19,39,34,.5); }
+  header.shrink .hdr-inner { height: 64px; }
+  .hdr-inner { transition: height .25s cubic-bezier(.23,1,.32,1); }
+  .item-card img { transition: transform .6s cubic-bezier(.23,1,.32,1); }
+  .item-arrow { transition: transform .2s; }
+  .chip { border: 1px solid #C9D2CD; border-radius: 999px; padding: .5rem 1.1rem; transition: background .2s, color .2s, border-color .2s; }
+  .chip[aria-pressed="true"] { background: #1D3A33; color: #F2F0EB; border-color: #1D3A33; }
+  .bounce { animation: bounce 2s cubic-bezier(.23,1,.32,1) infinite; }
+  @keyframes bounce { 0%,100% { transform: translateY(0); } 40% { transform: translateY(10px); } 60% { transform: translateY(4px); } }
+  .float { animation: floaty 7s ease-in-out infinite; }
+  @keyframes floaty { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-14px) rotate(1deg); } }
+  .caret { display: inline-block; width: 2px; height: 1em; background: #A9C4BA; margin-left: 3px; vertical-align: -0.12em; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .fab a { transition: transform .2s cubic-bezier(.23,1,.32,1), background .2s; }
+  .modal { transition: opacity .22s cubic-bezier(.23,1,.32,1); }
+  .modal[hidden] { display: none; }
+  .modal-panel { animation: pop .3s cubic-bezier(.23,1,.32,1); }
+  @keyframes pop { from { opacity: 0; transform: translateY(16px) scale(.97); } }
+  .plate { background: linear-gradient(160deg, #26463F, #132722); }
+  input, textarea, select { transition: border-color .2s, box-shadow .2s; }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: #3F6A86; box-shadow: 0 0 0 3px rgba(63,106,134,.18); }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .faq-ic { transform: rotate(45deg); }
+  .faq-ic { transition: transform .2s; }
+  .rowline { background-image: linear-gradient(#C9D2CD,#C9D2CD); background-size: 100% 1px; background-repeat: no-repeat; background-position: bottom; }
+  @media (prefers-reduced-motion: reduce) { .bounce, .float, .btn-flow, .caret { animation: none !important; } }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header id="hdr" class="fixed inset-x-0 top-0 z-40 bg-stone/95 backdrop-blur-sm transition-shadow">
+  <div class="hdr-inner mx-auto flex h-20 max-w-wrap items-center justify-between px-5 md:px-8">
+    <a href="#home" class="press flex items-center gap-3" aria-label="亞巨聯合商務中心 首頁">
+      <span class="grid h-10 w-10 place-items-center rounded-md bg-pine font-serif text-lg text-stone">7F</span>
+      <span class="leading-tight">
+        <span class="block font-tc text-[1.15rem] font-700 font-bold tracking-[0.18em] text-pine">亞巨聯合</span>
+        <span class="block text-[0.62rem] font-medium uppercase tracking-[0.32em] text-steel-deep">Ya Ju Business Center</span>
+      </span>
+    </a>
+    <nav class="hidden items-center gap-9 text-[0.95rem] lg:flex" aria-label="主選單">
+      <a class="nav-link" href="#home">首頁</a>
+      <a class="nav-link" href="#about">關於我們</a>
+      <a class="nav-link" href="#services">服務項目</a>
+      <a class="nav-link" href="#news">最新消息</a>
+      <a class="nav-link" href="#contact">聯絡我們</a>
+      <a href="tel:0423281008" class="btn btn-flow !py-2.5 text-sm"><i data-lucide="phone" class="h-4 w-4"></i>04 2328 1008</a>
+    </nav>
+    <button id="burger" class="press grid h-11 w-11 place-items-center rounded-md border border-pine/20 lg:hidden" aria-label="開啟選單" aria-expanded="false">
+      <i data-lucide="menu" class="h-5 w-5"></i>
+    </button>
+  </div>
+  <div id="mnav" class="hidden border-t border-pine/10 bg-stone px-5 pb-6 lg:hidden">
+    <nav class="flex flex-col text-lg" aria-label="手機選單">
+      <a class="nav-link rowline py-4" href="#home">首頁</a>
+      <a class="nav-link rowline py-4" href="#about">關於我們</a>
+      <a class="nav-link rowline py-4" href="#services">服務項目</a>
+      <a class="nav-link rowline py-4" href="#news">最新消息</a>
+      <a class="nav-link rowline py-4" href="#contact">聯絡我們</a>
+    </nav>
+    <a href="tel:0423281008" class="btn btn-flow mt-5 w-full justify-center"><i data-lucide="phone" class="h-4 w-4"></i>來電 04 2328 1008</a>
+  </div>
+</header>
+
+<!-- Floating right icons -->
+<div class="fab fixed right-0 top-1/2 z-30 flex -translate-y-1/2 flex-col gap-1">
+  <a href="https://line.me/" target="_blank" rel="noopener" class="press flex items-center gap-2 rounded-l-lg bg-pine px-3 py-3 text-stone" aria-label="LINE 諮詢"><i data-lucide="message-circle" class="h-5 w-5"></i><span class="hidden text-sm xl:inline">LINE</span></a>
+  <a href="tel:0423281008" class="press flex items-center gap-2 rounded-l-lg bg-pine px-3 py-3 text-stone" aria-label="撥打電話"><i data-lucide="phone" class="h-5 w-5"></i><span class="hidden text-sm xl:inline">來電</span></a>
+  <a href="#contact" data-quote class="press flex items-center gap-2 rounded-l-lg bg-steel-deep px-3 py-3 text-white" aria-label="線上詢價"><i data-lucide="file-pen-line" class="h-5 w-5"></i><span class="hidden text-sm xl:inline">詢價</span></a>
+</div>
+
+<main class="pt-20">
+
+<!-- ================= HOME ================= -->
+<section data-page="home">
+  <!-- Hero split -->
+  <div class="grid min-h-[calc(100svh-5rem)] lg:grid-cols-[1.05fr_1fr]">
+    <div class="on-dark relative flex flex-col justify-between bg-pine px-6 py-14 text-stone md:px-12 lg:px-16 lg:py-20">
+      <div class="hero-tag flex items-center gap-3 text-sm text-sage">
+        <span class="font-serif text-base text-stone">7F</span>
+        <span class="h-px w-10 bg-sage/60"></span>
+        台中市西區 美村路一段22號
+      </div>
+      <div class="my-12">
+        <h1 class="font-tc text-[2.6rem] font-bold leading-[1.18] tracking-[0.02em] sm:text-6xl lg:text-[4.4rem]">
+          <span class="block overflow-hidden"><span class="hl block">公司地址，</span></span>
+          <span class="block overflow-hidden"><span class="hl block">放在美村路</span></span>
+          <span class="block overflow-hidden"><span class="hl block text-sage">七樓。</span></span>
+        </h1>
+        <p class="hero-sub mt-8 max-w-md text-lg leading-relaxed text-mist/90">
+          剛創業、要設立分公司、或想有一間不用自己找裝潢的辦公室——<br class="hidden sm:block">這裡處理的是：<span id="typing" class="font-medium text-stone">借址登記</span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <div class="hero-cta mt-10 flex flex-wrap gap-3">
+          <a href="#services" class="btn btn-flow">看方案與規格<i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+          <a href="#contact" class="btn btn-line text-stone">預約參觀</a>
+        </div>
+      </div>
+      <a href="#why" data-anchor class="press flex w-fit items-center gap-3 text-sm text-sage">
+        <span class="bounce grid h-10 w-10 place-items-center rounded-full border border-sage/50"><i data-lucide="arrow-down" class="h-4 w-4"></i></span>
+        往下看空間與服務
+      </a>
+    </div>
+    <div class="relative min-h-[60vh] overflow-hidden bg-pine-deep">
+      <img src="https://images.pexels.com/photos/13219418/pexels-photo-13219418.jpeg?auto=compress&cs=tinysrgb&w=1600" data-img="office" data-w="1600" alt="商務中心明亮的接待區與辦公空間" loading="lazy" class="hero-img absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-pine-deep/60 via-transparent to-transparent"></div>
+      <!-- floating directory plate -->
+      <div class="float plate absolute bottom-8 left-6 w-60 rounded-lg p-5 text-stone shadow-[0_18px_40px_-16px_rgba(0,0,0,.6)] md:bottom-12 md:left-10">
+        <div class="flex items-baseline justify-between border-b border-sage/30 pb-3">
+          <span class="font-serif text-4xl">7F</span>
+          <span class="text-[0.7rem] uppercase tracking-[0.3em] text-sage">Directory</span>
+        </div>
+        <ul class="mt-3 space-y-1.5 text-sm text-mist">
+          <li class="flex justify-between"><span>接待櫃台</span><span class="text-sage">→</span></li>
+          <li class="flex justify-between"><span>獨立辦公室</span><span class="text-sage">A–</span></li>
+          <li class="flex justify-between"><span>會議室</span><span class="text-sage">M–</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why: split sticky -->
+  <div id="why" class="mx-auto grid max-w-wrap gap-12 px-5 py-24 md:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:py-32">
+    <div class="lg:sticky lg:top-28 lg:self-start">
+      <h2 class="font-tc text-3xl font-bold leading-snug text-pine md:text-[2.75rem]" data-reveal>登記地址會印在<br>名片、發票和合約上</h2>
+      <p class="mt-6 measure text-lg leading-relaxed text-ink/80" data-reveal>所以它不只要合法可登記，也要讓客戶、銀行、國稅局看了安心。亞巨把這件事做得很實際：地址在台中西區的商辦大樓，有人收信、有人接待、有地方開會。</p>
+    </div>
+    <div class="divide-y divide-pine/15 border-y border-pine/15">
+      <div class="grid gap-3 py-8 sm:grid-cols-[3rem_1fr]" data-reveal>
+        <i data-lucide="map-pin" class="h-7 w-7 text-steel"></i>
+        <div><h3 class="font-tc text-xl font-bold text-pine">西區美村路，一段22號7樓</h3><p class="mt-2 leading-relaxed text-ink/75">台中市區主要幹道上的辦公地址，客戶要來拜訪好找，交通與停車選擇也多，寫在官網上不用解釋。</p></div>
+      </div>
+      <div class="grid gap-3 py-8 sm:grid-cols-[3rem_1fr]" data-reveal>
+        <i data-lucide="mail-check" class="h-7 w-7 text-steel"></i>
+        <div><h3 class="font-tc text-xl font-bold text-pine">信件到了，會通知你</h3><p class="mt-2 leading-relaxed text-ink/75">公文、掛號、帳單由櫃台代收，通知後可自取或另約轉寄，不會讓重要信件卡在信箱裡。</p></div>
+      </div>
+      <div class="grid gap-3 py-8 sm:grid-cols-[3rem_1fr]" data-reveal>
+        <i data-lucide="door-open" class="h-7 w-7 text-steel"></i>
+        <div><h3 class="font-tc text-xl font-bold text-pine">需要時，有一間真的辦公室</h3><p class="mt-2 leading-relaxed text-ink/75">從借址登記開始，業務成長後可以直接換成獨立辦公室，地址不用改、登記不用重跑。</p></div>
+      </div>
+      <div class="grid gap-3 py-8 sm:grid-cols-[3rem_1fr]" data-reveal>
+        <i data-lucide="presentation" class="h-7 w-7 text-steel"></i>
+        <div><h3 class="font-tc text-xl font-bold text-pine">見客、面試，有會議室</h3><p class="mt-2 leading-relaxed text-ink/75">依時段預約，桌椅與投影設備備妥，不必約在咖啡店談合約。</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signature: mask -->
+  <div class="relative h-[85vh] overflow-hidden bg-pine-deep">
+    <div class="absolute inset-0" data-mask>
+      <img src="https://images.pexels.com/photos/32579238/pexels-photo-32579238.jpeg?auto=compress&cs=tinysrgb&w=1600" data-img="interior" data-w="1600" alt="商務中心獨立辦公室的室內空間" loading="lazy" class="h-full w-full object-cover">
+      <div class="absolute inset-0 bg-pine-deep/45"></div>
+    </div>
+    <div class="relative mx-auto flex h-full max-w-wrap items-end px-5 pb-16 md:px-8">
+      <p class="font-tc text-3xl font-bold leading-snug text-stone md:text-5xl" data-reveal>今天搬進來，<br>明天就能開門做生意。</p>
+    </div>
+  </div>
+
+  <!-- Featured catalog preview (split) -->
+  <div class="mx-auto max-w-wrap px-5 py-24 md:px-8 lg:py-32">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="font-tc text-3xl font-bold text-pine md:text-[2.75rem]" data-reveal>三種最常被問的方案</h2>
+      <a href="#services" class="btn btn-line text-pine" data-reveal>全部方案與規格表<i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+    </div>
+    <div class="mt-14 grid gap-px overflow-hidden rounded-xl bg-pine/15 md:grid-cols-3">
+      <a href="#services" data-open="addr-basic" class="item-card press group bg-stone p-6" data-reveal>
+        <div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/1313534/pexels-photo-1313534.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="office" data-w="600" alt="商辦大樓接待區" loading="lazy" class="h-full w-full object-cover"></div>
+        <p class="mt-5 text-sm text-steel-deep">借址登記</p>
+        <h3 class="mt-1 font-tc text-xl font-bold text-pine">公司／商號登記地址</h3>
+        <p class="mt-2 text-ink/70">適合在家工作、網路開店，需要一個正式營業地址。</p>
+        <span class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-pine">看規格<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span>
+      </a>
+      <a href="#services" data-open="office-1" class="item-card press group bg-stone p-6" data-reveal>
+        <div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/9757618/pexels-photo-9757618.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="interior" data-w="600" alt="一人獨立辦公室" loading="lazy" class="h-full w-full object-cover"></div>
+        <p class="mt-5 text-sm text-steel-deep">辦公空間</p>
+        <h3 class="mt-1 font-tc text-xl font-bold text-pine">一人獨立辦公室</h3>
+        <p class="mt-2 text-ink/70">附基本家具、網路，可上鎖，帶筆電就能進駐。</p>
+        <span class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-pine">看規格<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span>
+      </a>
+      <a href="#services" data-open="meet-s" class="item-card press group bg-stone p-6" data-reveal>
+        <div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/7693692/pexels-photo-7693692.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="meeting" data-w="600" alt="小型會議室" loading="lazy" class="h-full w-full object-cover"></div>
+        <p class="mt-5 text-sm text-steel-deep">會議空間</p>
+        <h3 class="mt-1 font-tc text-xl font-bold text-pine">小型會議室</h3>
+        <p class="mt-2 text-ink/70">依時段預約，適合客戶簡報、面試、簽約。</p>
+        <span class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-pine">看規格<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Process: real steps, split sticky -->
+  <div class="bg-mist">
+    <div class="mx-auto grid max-w-wrap gap-12 px-5 py-24 md:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:py-28">
+      <div class="lg:sticky lg:top-28 lg:self-start">
+        <h2 class="font-tc text-3xl font-bold leading-snug text-pine md:text-[2.75rem]" data-reveal>從詢問到拿到地址，<br>大概是這樣</h2>
+        <p class="mt-6 measure leading-relaxed text-ink/75" data-reveal>實際所需天數依主管機關審核而定，簽約前會先跟你確認文件。</p>
+      </div>
+      <ol class="space-y-10">
+        <li class="grid grid-cols-[3.5rem_1fr] gap-4" data-reveal><span class="font-serif text-3xl text-steel">1</span><div><h3 class="font-tc text-xl font-bold text-pine">來電或填表，說明需求</h3><p class="mt-2 text-ink/75">公司或行號、預計營業項目、是否需要辦公座位，我們先告訴你適合哪個方案。</p></div></li>
+        <li class="grid grid-cols-[3.5rem_1fr] gap-4" data-reveal><span class="font-serif text-3xl text-steel">2</span><div><h3 class="font-tc text-xl font-bold text-pine">現場看環境</h3><p class="mt-2 text-ink/75">到美村路一段22號7樓看看接待區、辦公室與會議室，覺得合適再談。</p></div></li>
+        <li class="grid grid-cols-[3.5rem_1fr] gap-4" data-reveal><span class="font-serif text-3xl text-steel">3</span><div><h3 class="font-tc text-xl font-bold text-pine">簽約、取得租賃與同意文件</h3><p class="mt-2 text-ink/75">提供登記所需的租賃契約與房屋相關證明，送件時直接使用。</p></div></li>
+        <li class="grid grid-cols-[3.5rem_1fr] gap-4" data-reveal><span class="font-serif text-3xl text-steel">4</span><div><h3 class="font-tc text-xl font-bold text-pine">完成登記，開始收信與使用空間</h3><p class="mt-2 text-ink/75">核准後地址即可使用，信件代收、會議室預約同步開始。</p></div></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Quote -->
+  <div class="mx-auto max-w-wrap px-5 py-24 md:px-8 lg:py-32">
+    <figure class="mx-auto max-w-3xl" data-reveal>
+      <blockquote class="font-tc text-2xl font-semibold leading-relaxed text-pine md:text-[2rem]">「原本以為借址就是一個地址而已。後來客戶來台中，我直接約在七樓的會議室，對方說：你們辦公室在這裡啊，很方便。」</blockquote>
+      <figcaption class="mt-6 text-ink/60">— 陳先生／網路電商負責人（示意見證）</figcaption>
+    </figure>
+  </div>
+
+  <!-- FAQ -->
+  <div class="border-t border-pine/15">
+    <div class="mx-auto grid max-w-wrap gap-10 px-5 py-24 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <h2 class="font-tc text-3xl font-bold text-pine md:text-[2.5rem]" data-reveal>常被問到的事</h2>
+      <div class="divide-y divide-pine/15 border-y border-pine/15">
+        <details class="group py-6" data-reveal><summary class="flex cursor-pointer items-center justify-between gap-4 font-tc text-lg font-semibold text-pine">借址登記是合法的嗎？<i data-lucide="plus" class="faq-ic h-5 w-5 shrink-0"></i></summary><p class="mt-4 leading-relaxed text-ink/75">以租賃契約方式取得營業地址，是常見且合法的作法。實際能否登記仍依營業項目與主管機關規定，簽約前會先協助確認。</p></details>
+        <details class="group py-6" data-reveal><summary class="flex cursor-pointer items-center justify-between gap-4 font-tc text-lg font-semibold text-pine">費用怎麼算？有最短租期嗎？<i data-lucide="plus" class="faq-ic h-5 w-5 shrink-0"></i></summary><p class="mt-4 leading-relaxed text-ink/75">依方案與簽約期間計算，長約通常較划算。各方案的價目表可在「服務項目」下載，或直接來電詢價。</p></details>
+        <details class="group py-6" data-reveal><summary class="flex cursor-pointer items-center justify-between gap-4 font-tc text-lg font-semibold text-pine">國稅局或客戶來訪怎麼辦？<i data-lucide="plus" class="faq-ic h-5 w-5 shrink-0"></i></summary><p class="mt-4 leading-relaxed text-ink/75">櫃台會協助接待並立即通知你；需要當面處理時，可預約會議室使用。</p></details>
+        <details class="group py-6" data-reveal><summary class="flex cursor-pointer items-center justify-between gap-4 font-tc text-lg font-semibold text-pine">之後想換成獨立辦公室可以嗎？<i data-lucide="plus" class="faq-ic h-5 w-5 shrink-0"></i></summary><p class="mt-4 leading-relaxed text-ink/75">可以，依空室狀況安排。因為地址相同，不需要重新辦理地址變更。</p></details>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="on-dark bg-pine text-stone">
+    <div class="mx-auto grid max-w-wrap items-center gap-10 px-5 py-20 md:px-8 lg:grid-cols-2">
+      <h2 class="font-tc text-3xl font-bold leading-snug md:text-5xl" data-wipe>先來七樓看看，<br>再決定要不要簽。</h2>
+      <div class="lg:justify-self-end">
+        <p class="text-lg text-mist">電話 <a href="tel:0423281008" class="num font-serif text-2xl text-stone underline decoration-sage/50">04 2328 1008</a></p>
+        <div class="mt-6 flex flex-wrap gap-3"><a href="#contact" class="btn btn-flow">預約參觀<i data-lucide="calendar" class="h-4 w-4"></i></a><a href="#services" class="btn btn-line text-stone">下載價目表</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section data-page="about">
+  <div class="grid lg:grid-cols-2">
+    <div class="flex flex-col justify-center bg-pine px-6 py-20 text-stone md:px-12 lg:px-16">
+      <h1 class="font-tc text-4xl font-bold leading-tight md:text-6xl" data-reveal>讓小公司，<br>也有像樣的門面</h1>
+      <p class="mt-8 max-w-lg text-lg leading-relaxed text-mist" data-reveal>亞巨聯合商務中心位在台中市西區美村路一段22號7樓。我們做的事很單純：把登記地址、收發信件、辦公室與會議室整理成清楚的方案，讓剛起步或正在擴張的團隊，不用先砸錢裝潢，就能用一個正式的地址開始營運。</p>
+    </div>
+    <div class="relative min-h-[50vh]"><img src="https://images.pexels.com/photos/3137050/pexels-photo-3137050.jpeg?auto=compress&cs=tinysrgb&w=1600" data-img="architecture" data-w="1600" alt="商辦大樓建築外觀" loading="lazy" class="absolute inset-0 h-full w-full object-cover"></div>
+  </div>
+  <div class="mx-auto grid max-w-wrap gap-12 px-5 py-24 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+    <h2 class="font-tc text-3xl font-bold text-pine md:text-[2.5rem] lg:sticky lg:top-28 lg:self-start" data-reveal>我們在意的幾件事</h2>
+    <div class="space-y-12">
+      <div data-reveal><h3 class="font-tc text-xl font-bold text-pine">價格先講清楚</h3><p class="mt-3 measure leading-relaxed text-ink/75">方案內含什麼、另外收費的是什麼，簽約前白紙黑字列出來，不會用完才知道要加錢。</p></div>
+      <div data-reveal><h3 class="font-tc text-xl font-bold text-pine">信件不漏接</h3><p class="mt-3 measure leading-relaxed text-ink/75">掛號與公文是公司最怕漏的東西，櫃台代收後會通知，依你的習慣安排自取或轉寄。</p></div>
+      <div data-reveal><h3 class="font-tc text-xl font-bold text-pine">空間維持在可以見客的樣子</h3><p class="mt-3 measure leading-relaxed text-ink/75">接待區、走道、會議室保持整潔，你帶客戶上來，不需要先解釋。</p></div>
+    </div>
+  </div>
+  <div class="bg-mist">
+    <div class="mx-auto grid max-w-wrap gap-4 px-5 py-20 md:grid-cols-3 md:px-8">
+      <img src="https://images.pexels.com/photos/14841129/pexels-photo-14841129.jpeg?auto=compress&cs=tinysrgb&w=1000" data-img="hotel" data-w="1000" alt="接待大廳" loading="lazy" class="h-72 w-full rounded-xl object-cover md:col-span-2" data-reveal>
+      <img src="https://images.pexels.com/photos/6893890/pexels-photo-6893890.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="laptop" data-w="600" alt="在辦公桌使用筆電工作" loading="lazy" class="h-72 w-full rounded-xl object-cover" data-reveal>
+      <img src="https://images.pexels.com/photos/5668496/pexels-photo-5668496.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="meeting" data-w="600" alt="會議室內的團隊討論" loading="lazy" class="h-72 w-full rounded-xl object-cover" data-reveal>
+      <div class="flex flex-col justify-between rounded-xl bg-pine p-8 text-stone md:col-span-2" data-reveal>
+        <p class="font-tc text-2xl leading-relaxed">適合：一人公司、電商與接案者、外縣市企業的台中據點、剛成立需要登記地址的新創。</p>
+        <a href="#services" class="btn btn-line mt-6 w-fit text-stone on-dark">看適合你的方案</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES (catalog) ================= -->
+<section data-page="services">
+  <div class="mx-auto max-w-wrap px-5 pb-10 pt-16 md:px-8 lg:pt-24">
+    <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div>
+        <h1 class="font-tc text-4xl font-bold text-pine md:text-6xl" data-reveal>服務方案與規格</h1>
+        <p class="mt-5 measure text-lg text-ink/75" data-reveal>依類別篩選，點開可看完整規格與下載資料。價格為示意，實際依簽約期間報價。</p>
+      </div>
+      <div class="flex flex-wrap gap-2" role="group" aria-label="方案分類" id="filters">
+        <button class="chip press" aria-pressed="true" data-filter="all">全部</button>
+        <button class="chip press" aria-pressed="false" data-filter="reg">借址登記</button>
+        <button class="chip press" aria-pressed="false" data-filter="office">辦公空間</button>
+        <button class="chip press" aria-pressed="false" data-filter="meeting">會議空間</button>
+        <button class="chip press" aria-pressed="false" data-filter="admin">行政代辦</button>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto max-w-wrap px-5 pb-24 md:px-8">
+    <div id="catalog" class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <button data-id="addr-basic" data-cat="reg" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/9300768/pexels-photo-9300768.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="office" data-w="600" alt="接待櫃台" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">借址登記</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">公司／商號登記地址</h3><p class="mt-2 text-ink/70">合法營業地址，提供登記所需租約文件。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="addr-mail" data-cat="reg" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/7709141/pexels-photo-7709141.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="service" data-w="600" alt="櫃台人員處理信件" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">借址登記</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">登記地址＋信件代收</h3><p class="mt-2 text-ink/70">掛號、公文代收並通知，可約轉寄。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="office-1" data-cat="office" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/33685860/pexels-photo-33685860.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="interior" data-w="600" alt="一人獨立辦公室" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">辦公空間</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">一人獨立辦公室</h3><p class="mt-2 text-ink/70">可上鎖，附家具與網路。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="office-team" data-cat="office" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/16370914/pexels-photo-16370914.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="office" data-w="600" alt="小團隊辦公室" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">辦公空間</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">2–4 人團隊辦公室</h3><p class="mt-2 text-ink/70">小團隊進駐，依人數配置座位。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="desk" data-cat="office" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/34676332/pexels-photo-34676332.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="laptop" data-w="600" alt="共享座位使用筆電" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">辦公空間</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">共享座位</h3><p class="mt-2 text-ink/70">彈性使用，適合偶爾進辦公室的人。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="meet-s" data-cat="meeting" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/5668495/pexels-photo-5668495.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="meeting" data-w="600" alt="小型會議室" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">會議空間</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">小型會議室</h3><p class="mt-2 text-ink/70">4–6 人，簡報、面試、簽約。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="meet-l" data-cat="meeting" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/33175650/pexels-photo-33175650.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="handshake" data-w="600" alt="會議中握手" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">會議空間</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">中大型會議室</h3><p class="mt-2 text-ink/70">內部會議、教育訓練、小型說明會。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="setup" data-cat="admin" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/7876507/pexels-photo-7876507.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="finance" data-w="600" alt="整理公司文件" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">行政代辦</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">公司設立協助</h3><p class="mt-2 text-ink/70">名稱預查到設立登記的流程協助。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+      <button data-id="tax" data-cat="admin" class="item-card press text-left" data-reveal><div class="aspect-[4/3] overflow-hidden rounded-lg"><img src="https://images.pexels.com/photos/7876380/pexels-photo-7876380.jpeg?auto=compress&cs=tinysrgb&w=600" data-img="finance" data-w="600" alt="帳務報表" loading="lazy" class="h-full w-full object-cover"></div><p class="mt-4 text-sm text-steel-deep">行政代辦</p><h3 class="mt-1 font-tc text-xl font-bold text-pine">記帳報稅轉介</h3><p class="mt-2 text-ink/70">協助轉介合作記帳服務。</p><span class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-pine">規格與下載<i data-lucide="arrow-right" class="item-arrow h-4 w-4"></i></span></button>
+    </div>
+  </div>
+
+  <!-- Download area -->
+  <div id="downloads" class="bg-mist">
+    <div class="mx-auto grid max-w-wrap gap-10 px-5 py-20 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <div>
+        <h2 class="font-tc text-3xl font-bold text-pine md:text-4xl" data-reveal>資料下載</h2>
+        <p class="mt-4 measure text-ink/75" data-reveal>送件前先看看要準備哪些文件。以下為示意檔案。</p>
+      </div>
+      <ul class="divide-y divide-pine/15 border-y border-pine/15">
+        <li><button data-dl="亞巨商務中心_服務價目表_示意.txt" class="row-link press flex w-full items-center justify-between gap-4 px-3 py-5 text-left transition-colors"><span class="flex items-center gap-4"><i data-lucide="file-text" class="h-5 w-5 text-steel"></i><span><span class="block font-medium text-pine">服務價目表</span><span class="text-sm text-ink/60">PDF・示意</span></span></span><i data-lucide="download" class="h-5 w-5 text-pine"></i></button></li>
+        <li><button data-dl="公司登記所需文件清單_示意.txt" class="row-link press flex w-full items-center justify-between gap-4 px-3 py-5 text-left transition-colors"><span class="flex items-center gap-4"><i data-lucide="list-checks" class="h-5 w-5 text-steel"></i><span><span class="block font-medium text-pine">公司／商號登記文件清單</span><span class="text-sm text-ink/60">PDF・示意</span></span></span><i data-lucide="download" class="h-5 w-5 text-pine"></i></button></li>
+        <li><button data-dl="租賃契約範本_示意.txt" class="row-link press flex w-full items-center justify-between gap-4 px-3 py-5 text-left transition-colors"><span class="flex items-center gap-4"><i data-lucide="file-signature" class="h-5 w-5 text-steel"></i><span><span class="block font-medium text-pine">租賃契約範本</span><span class="text-sm text-ink/60">DOCX・示意</span></span></span><i data-lucide="download" class="h-5 w-5 text-pine"></i></button></li>
+        <li><button data-dl="會議室使用須知_示意.txt" class="row-link press flex w-full items-center justify-between gap-4 px-3 py-5 text-left transition-colors"><span class="flex items-center gap-4"><i data-lucide="clipboard-list" class="h-5 w-5 text-steel"></i><span><span class="block font-medium text-pine">會議室使用須知</span><span class="text-sm text-ink/60">PDF・示意</span></span></span><i data-lucide="download" class="h-5 w-5 text-pine"></i></button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section data-page="news">
+  <div class="mx-auto max-w-wrap px-5 py-16 md:px-8 lg:py-24">
+    <h1 class="font-tc text-4xl font-bold text-pine md:text-6xl" data-reveal>最新消息</h1>
+    <p class="mt-5 measure text-lg text-ink/75" data-reveal>空室釋出、登記法規提醒、會議室時段公告，都會寫在這裡。</p>
+    <div class="mt-14 grid gap-12 lg:grid-cols-[1.3fr_1fr]">
+      <button data-article="a1" class="news-item press text-left" data-reveal>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl"><img src="https://images.pexels.com/photos/35189707/pexels-photo-35189707.jpeg?auto=compress&cs=tinysrgb&w=1000" data-img="interior" data-w="1000" alt="釋出的獨立辦公室" loading="lazy" class="h-full w-full object-cover"></div>
+        <p class="mt-5 text-sm text-steel-deep">空室公告・示意日期</p>
+        <h3 class="mt-2 font-tc text-2xl font-bold text-pine transition-colors md:text-3xl">七樓獨立辦公室釋出，開放預約參觀</h3>
+        <p class="mt-3 text-ink/70">適合 1–2 人團隊進駐，附家具與網路，有興趣可先來電預約看房時段。</p>
+      </button>
+      <div class="divide-y divide-pine/15 border-y border-pine/15">
+        <button data-article="a2" class="news-item press block w-full py-6 text-left" data-reveal><p class="text-sm text-steel-deep">登記知識</p><h3 class="mt-1 font-tc text-xl font-bold text-pine transition-colors">借址登記前，先確認營業項目</h3><p class="mt-2 text-sm text-ink/70">部分特許行業不適用，送件前先問清楚。</p></button>
+        <button data-article="a3" class="news-item press block w-full py-6 text-left" data-reveal><p class="text-sm text-steel-deep">服務公告</p><h3 class="mt-1 font-tc text-xl font-bold text-pine transition-colors">會議室預約方式說明</h3><p class="mt-2 text-sm text-ink/70">電話或 LINE 預約，提前確認時段與人數。</p></button>
+        <button data-article="a4" class="news-item press block w-full py-6 text-left" data-reveal><p class="text-sm text-steel-deep">登記知識</p><h3 class="mt-1 font-tc text-xl font-bold text-pine transition-colors">公司與行號，差在哪？</h3><p class="mt-2 text-sm text-ink/70">責任、稅務與適合對象的簡單整理。</p></button>
+      </div>
+    </div>
+  </div>
+  <!-- article bodies -->
+  <div hidden id="articles">
+    <article data-a="a1"><h2>七樓獨立辦公室釋出，開放預約參觀</h2><p>近期有一間獨立辦公室釋出，空間適合 1–2 人使用，附辦公桌椅、收納櫃與網路，可上鎖。</p><p>若你目前使用借址登記，換成獨立辦公室時地址不變，不需辦理地址變更。參觀請先來電 04 2328 1008 約時間。</p><p>（本文為示意內容）</p></article>
+    <article data-a="a2"><h2>借址登記前，先確認營業項目</h2><p>多數一般營業項目都能以商務中心地址登記，但涉及特許、需要實體營業場所或倉儲的項目，可能無法使用。</p><p>簽約前請告訴我們預計的營業項目代碼，我們會協助確認，避免送件後被退件。</p><p>（本文為示意內容）</p></article>
+    <article data-a="a3"><h2>會議室預約方式說明</h2><p>會議室採預約制，請以電話或 LINE 告知日期、時段與人數，確認後即保留。</p><p>如需投影或白板，預約時一併說明。取消請提前通知，方便安排其他使用者。</p><p>（本文為示意內容）</p></article>
+    <article data-a="a4"><h2>公司與行號，差在哪？</h2><p>行號（商號）設立較簡單，負責人負無限責任；公司則為獨立法人，股東依出資負責。</p><p>開立發票、對外合作的需求不同，適合的型態也不同，可以來電聊聊你的狀況。</p><p>（本文為示意內容，實際規定請以主管機關公告為準）</p></article>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section data-page="contact">
+  <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+    <div class="on-dark bg-pine px-6 py-16 text-stone md:px-12 lg:px-16 lg:py-24">
+      <h1 class="font-tc text-4xl font-bold leading-tight md:text-5xl" data-reveal>預約參觀<br>或詢問方案</h1>
+      <p class="mt-6 max-w-md text-lg text-mist" data-reveal>留下需求，我們會回電說明適合的方案與費用。急的話直接打電話最快。</p>
+      <dl class="mt-12 space-y-8" data-reveal>
+        <div class="flex gap-4"><i data-lucide="phone" class="mt-1 h-5 w-5 text-sage"></i><div><dt class="text-sm text-sage">電話</dt><dd><a href="tel:0423281008" class="num font-serif text-2xl underline decoration-sage/50">04 2328 1008</a></dd></div></div>
+        <div class="flex gap-4"><i data-lucide="map-pin" class="mt-1 h-5 w-5 text-sage"></i><div><dt class="text-sm text-sage">地址</dt><dd class="text-lg">台中市西區美村路一段22號7樓</dd></div></div>
+        <div class="flex gap-4"><i data-lucide="clock" class="mt-1 h-5 w-5 text-sage"></i><div><dt class="text-sm text-sage">服務時間</dt><dd class="text-lg">週一至週五 09:00–18:00（示意）</dd></div></div>
+      </dl>
+      <div class="plate mt-12 rounded-lg p-6" data-reveal>
+        <p class="font-serif text-5xl">7F</p>
+        <p class="mt-2 text-mist">搭電梯至七樓，出電梯即為接待櫃台。</p>
+      </div>
+    </div>
+    <div class="px-6 py-16 md:px-12 lg:px-16 lg:py-24">
+      <form id="form" class="mx-auto max-w-xl space-y-6" novalidate>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <label class="block"><span class="text-sm font-medium text-pine">姓名 <span class="text-steel-deep">*</span></span><input name="name" required placeholder="王小明" class="mt-2 w-full rounded-lg border border-pine/25 bg-white px-4 py-3"></label>
+          <label class="block"><span class="text-sm font-medium text-pine">電話 <span class="text-steel-deep">*</span></span><input name="tel" required type="tel" placeholder="0912-345-678" class="mt-2 w-full rounded-lg border border-pine/25 bg-white px-4 py-3"></label>
+        </div>
+        <label class="block"><span class="text-sm font-medium text-pine">Email</span><input name="email" type="email" placeholder="name@company.com" class="mt-2 w-full rounded-lg border border-pine/25 bg-white px-4 py-3"></label>
+        <label class="block"><span class="text-sm font-medium text-pine">想了解的方案 <span class="text-steel-deep">*</span></span>
+          <select id="plan" name="plan" required class="mt-2 w-full rounded-lg border border-pine/25 bg-white px-4 py-3">
+            <option value="">請選擇</option><option>公司／商號登記地址</option><option>登記地址＋信件代收</option><option>一人獨立辦公室</option><option>2–4 人團隊辦公室</option><option>共享座位</option><option>小型會議室</option><option>中大型會議室</option><option>公司設立協助</option><option>記帳報稅轉介</option><option>還不確定，想先聊聊</option>
+          </select></label>
+        <label class="block"><span class="text-sm font-medium text-pine">需求說明</span><textarea name="msg" rows="5" placeholder="例如：預計成立有限公司、營業項目為網路零售，想先看環境" class="mt-2 w-full rounded-lg border border-pine/25 bg-white px-4 py-3"></textarea></label>
+        <p id="err" class="hidden text-sm text-steel-deep">請填寫標示 * 的欄位。</p>
+        <button type="submit" class="btn btn-flow w-full justify-center sm:w-auto">送出詢問<i data-lucide="send" class="h-4 w-4"></i></button>
+      </form>
+      <div id="ok" class="mx-auto hidden max-w-xl rounded-xl bg-mist p-10 text-center">
+        <i data-lucide="circle-check" class="mx-auto h-12 w-12 text-steel"></i>
+        <h2 class="mt-4 font-tc text-2xl font-bold text-pine">已收到你的詢問</h2>
+        <p class="mt-3 text-ink/75">我們會在服務時間內回電。若想更快確認，歡迎直接撥打 04 2328 1008。</p>
+        <button id="again" class="btn btn-line mt-6 text-pine">再填一份</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer bg-pine-deep text-mist/80">
+  <div class="mx-auto grid max-w-wrap gap-10 px-5 py-16 md:grid-cols-2 md:px-8 lg:grid-cols-4">
+    <div>
+      <p class="font-tc text-xl font-bold tracking-[0.18em] text-stone">亞巨聯合商務中心</p>
+      <p class="mt-1 text-xs uppercase tracking-[0.3em] text-sage">Ya Ju Business Center</p>
+      <p class="mt-5 text-sm leading-relaxed">台中西區的登記地址、辦公室與會議室。</p>
+    </div>
+    <div><p class="font-medium text-stone">頁面</p><ul class="mt-4 space-y-2 text-sm"><li><a href="#home">首頁</a></li><li><a href="#about">關於我們</a></li><li><a href="#services">服務項目</a></li><li><a href="#news">最新消息</a></li><li><a href="#contact">聯絡我們</a></li></ul></div>
+    <div><p class="font-medium text-stone">方案</p><ul class="mt-4 space-y-2 text-sm"><li><a href="#services" data-open="addr-basic">借址登記</a></li><li><a href="#services" data-open="office-1">獨立辦公室</a></li><li><a href="#services" data-open="meet-s">會議室租借</a></li><li><a href="#services" data-scroll="downloads">資料下載</a></li></ul></div>
+    <div><p class="font-medium text-stone">聯絡</p><ul class="mt-4 space-y-2 text-sm"><li><a href="tel:0423281008">04 2328 1008</a></li><li>台中市西區美村路一段22號7樓</li></ul></div>
+  </div>
+  <div class="border-t border-white/10"><p class="mx-auto max-w-wrap px-5 py-5 text-xs text-sage md:px-8">© <span id="yr"></span> 亞巨聯合商務中心 版權所有</p></div>
+</footer>
+
+<!-- Product detail modal -->
+<div id="pmodal" class="modal fixed inset-0 z-50 grid place-items-center bg-ink/60 p-4" hidden role="dialog" aria-modal="true" aria-labelledby="pm-title">
+  <div class="modal-panel max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-xl bg-stone shadow-[0_30px_60px_-20px_rgba(0,0,0,.5)]">
+    <div class="grid md:grid-cols-2">
+      <div class="relative min-h-[240px] bg-pine"><img id="pm-img" alt="" class="absolute inset-0 h-full w-full object-cover"></div>
+      <div class="p-7 md:p-9">
+        <div class="flex items-start justify-between gap-4">
+          <div><p id="pm-cat" class="text-sm text-steel-deep"></p><h2 id="pm-title" class="mt-1 font-tc text-2xl font-bold text-pine"></h2></div>
+          <button data-close class="press grid h-10 w-10 shrink-0 place-items-center rounded-full border border-pine/20" aria-label="關閉"><i data-lucide="x" class="h-5 w-5"></i></button>
+        </div>
+        <p id="pm-desc" class="mt-4 leading-relaxed text-ink/75"></p>
+        <table class="mt-6 w-full text-sm"><tbody id="pm-spec"></tbody></table>
+        <div id="pm-files" class="mt-6 space-y-2"></div>
+        <div class="mt-7 flex flex-wrap gap-3"><a href="#contact" id="pm-quote" class="btn btn-flow">詢問此方案</a><a href="tel:0423281008" class="btn btn-line text-pine">來電</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Article modal -->
+<div id="amodal" class="modal fixed inset-0 z-50 grid place-items-center bg-ink/60 p-4" hidden role="dialog" aria-modal="true">
+  <div class="modal-panel max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl bg-stone p-7 md:p-10">
+    <div class="flex justify-end"><button data-close class="press grid h-10 w-10 place-items-center rounded-full border border-pine/20" aria-label="關閉"><i data-lucide="x" class="h-5 w-5"></i></button></div>
+    <div id="a-body" class="space-y-4 leading-relaxed text-ink/80 [&_h2]:font-tc [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-pine md:[&_h2]:text-3xl"></div>
+    <div class="mt-8 border-t border-pine/15 pt-6">
+      <p class="text-sm font-medium text-pine">分享這篇文章</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <button data-share="fb" class="chip press flex items-center gap-2 text-sm"><i data-lucide="facebook" class="h-4 w-4"></i>Facebook</button>
+        <button data-share="line" class="chip press flex items-center gap-2 text-sm"><i data-lucide="message-circle" class="h-4 w-4"></i>LINE</button>
+        <button data-share="wechat" class="chip press flex items-center gap-2 text-sm"><i data-lucide="qr-code" class="h-4 w-4"></i>WeChat</button>
+        <button data-share="tw" class="chip press flex items-center gap-2 text-sm"><i data-lucide="twitter" class="h-4 w-4"></i>Twitter</button>
+      </div>
+      <p id="wx-tip" class="mt-3 hidden text-sm text-steel-deep">請複製網址列連結，於 WeChat 貼上分享。</p>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 rounded-full bg-pine px-5 py-3 text-sm text-stone opacity-0 shadow-[0_12px_30px_-12px_rgba(0,0,0,.5)] transition-opacity duration-200"></div>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+window.lucide && lucide.createIcons();
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (window.gsap) gsap.registerPlugin(ScrollTrigger);
+if (window.Lenis && window.gsap && !reduce) { const lenis = new Lenis({ lerp: 0.1 }); lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0); window.__lenis = lenis; }
+function splitChars(el) { if (el.dataset.done) return el.querySelectorAll('.ch'); el.dataset.done = 1; const t = el.textContent; el.textContent = ''; el.setAttribute('aria-label', t); [...t].forEach(c => { const s = document.createElement('span'); s.className = 'ch'; s.setAttribute('aria-hidden', 'true'); s.style.display = 'inline-block'; s.textContent = c === ' ' ? '\u00A0' : c; el.appendChild(s); }); return el.querySelectorAll('.ch'); }
+
+let ctx;
+function initMotion(scope) {
+  ctx && ctx.revert(); if (reduce || !window.gsap) return;
+  ctx = gsap.context(() => {
+    const mm = gsap.matchMedia();
+    if (scope.dataset.page === 'home') {
+      const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
+      tl.fromTo('.hero-img', { clipPath: 'inset(0 0 100% 0)', scale: 1.08 }, { clipPath: 'inset(0 0 0% 0)', scale: 1, duration: 1.1 })
+        .from('.hl', { yPercent: 105, duration: 0.8, stagger: 0.07 }, 0.15)
+        .from(['.hero-tag', '.hero-sub', '.hero-cta'], { y: 20, opacity: 0, duration: 0.6, stagger: 0.06 }, 0.45);
+    }
+    scope.querySelectorAll('[data-reveal]').forEach(el => gsap.from(el, { y: 32, opacity: 0, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%' } }));
+    scope.querySelectorAll('[data-split]').forEach(el => gsap.from(splitChars(el), { yPercent: 100, opacity: 0, stagger: 0.03, duration: 0.7, ease: 'power4.out', scrollTrigger: { trigger: el, start: 'top 88%' } }));
+    scope.querySelectorAll('[data-parallax]').forEach(el => { const s = parseFloat(el.dataset.parallax) || 0.2; gsap.fromTo(el, { yPercent: -40 * s }, { yPercent: 40 * s, ease: 'none', scrollTrigger: { trigger: el.parentElement, scrub: true } }); });
+    scope.querySelectorAll('[data-mask]').forEach(el => gsap.fromTo(el, { clipPath: 'inset(12% 12% 12% 12% round 12px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'none', scrollTrigger: { trigger: el, start: 'top 92%', end: 'top 25%', scrub: true } }));
+    scope.querySelectorAll('[data-wipe]').forEach(el => gsap.fromTo(el, { clipPath: el.dataset.wipe === 'right' ? 'inset(0 0 0 100%)' : 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0%)', duration: 1.1, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 85%' } }));
+    scope.querySelectorAll('[data-marquee]').forEach(el => { const t = el.querySelector('.marquee-track'); if (t) gsap.to(t, { xPercent: -50, ease: 'none', duration: parseFloat(el.dataset.marquee) || 30, repeat: -1 }); });
+    scope.querySelectorAll('[data-draw]').forEach(p => { const len = p.getTotalLength(); gsap.set(p, { strokeDasharray: len, strokeDashoffset: len }); gsap.to(p, { strokeDashoffset: 0, ease: 'none', scrollTrigger: { trigger: p.closest('section') || p, start: 'top 70%', end: 'bottom 60%', scrub: true } }); });
+    mm.add('(min-width: 900px)', () => {
+      scope.querySelectorAll('[data-stack]').forEach(sec => { const cards = sec.querySelectorAll('.stack-card'); cards.forEach((c, i) => { if (i < cards.length - 1) gsap.to(c, { scale: 0.94, opacity: 0.55, ease: 'none', scrollTrigger: { trigger: cards[i + 1], start: 'top 85%', end: 'top 25%', scrub: true } }); }); });
+      scope.querySelectorAll('[data-pinsteps]').forEach(sec => { const steps = sec.querySelectorAll('.step'); if (steps.length < 2) return; gsap.set(steps, { autoAlpha: 0 }); gsap.set(steps[0], { autoAlpha: 1 }); const tl = gsap.timeline({ scrollTrigger: { trigger: sec, start: 'top top', end: () => '+=' + steps.length * 90 + '%', pin: true, scrub: 0.6 } }); steps.forEach((s, i) => { if (!i) return; tl.to(steps[i - 1], { autoAlpha: 0, y: -40, duration: 0.5 }).fromTo(s, { autoAlpha: 0, y: 60 }, { autoAlpha: 1, y: 0, duration: 0.5 }, '<0.1').to({}, { duration: 0.6 }); }); });
+      scope.querySelectorAll('[data-hscroll]').forEach(sec => { const track = sec.querySelector('.track'); gsap.to(track, { x: () => -(track.scrollWidth - innerWidth + 80), ease: 'none', scrollTrigger: { trigger: sec, start: 'top top', end: () => '+=' + (track.scrollWidth - innerWidth + 80), pin: true, scrub: true, invalidateOnRefresh: true } }); });
+    });
+  }, scope);
+  requestAnimationFrame(() => ScrollTrigger.refresh());
+}
+
+/* Typing */
+(function () {
+  const el = document.getElementById('typing'); const words = ['借址登記', '獨立辦公室', '會議室租借'];
+  if (reduce) return; let w = 0, i = words[0].length, del = true;
+  function tick() {
+    const word = words[w];
+    if (del) { i--; el.textContent = word.slice(0, i); if (i <= 0) { del = false; w = (w + 1) % words.length; } setTimeout(tick, 70); }
+    else { const nw = words[w]; i++; el.textContent = nw.slice(0, i); if (i >= nw.length) { del = true; setTimeout(tick, 2000); } else setTimeout(tick, 120); }
+  }
+  setTimeout(tick, 2400);
+})();
+
+/* Router */
+const pages = ['home', 'about', 'services', 'news', 'contact'];
+let pendingOpen = null, pendingScroll = null;
+function scrollTop() { if (window.__lenis) window.__lenis.scrollTo(0, { immediate: true }); else window.scrollTo(0, 0); }
+function route() {
+  const id = pages.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home';
+  document.querySelectorAll('[data-page]').forEach(s => s.classList.toggle('is-active', s.dataset.page === id));
+  document.querySelectorAll('.nav-link').forEach(a => { const on = a.getAttribute('href') === '#' + id; a.classList.toggle('is-current', on); on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'); });
+  closeMenu(); scrollTop();
+  const sec = document.querySelector(`[data-page="${id}"]`);
+  requestAnimationFrame(() => {
+    initMotion(sec);
+    if (pendingOpen) { openProduct(pendingOpen); pendingOpen = null; }
+    if (pendingScroll) { const t = document.getElementById(pendingScroll); pendingScroll = null; setTimeout(() => smoothTo(t), 120); }
+  });
+}
+function smoothTo(t) { if (!t) return; if (window.__lenis) window.__lenis.scrollTo(t, { offset: -80 }); else t.scrollIntoView({ behavior: 'smooth' }); }
+window.addEventListener('hashchange', route);
+
+document.addEventListener('click', e => {
+  const anchor = e.target.closest('[data-anchor]');
+  if (anchor) { e.preventDefault(); smoothTo(document.querySelector(anchor.getAttribute('href'))); return; }
+  const op = e.target.closest('a[data-open]');
+  if (op) { pendingOpen = op.dataset.open; if (location.hash === '#services') { e.preventDefault(); openProduct(pendingOpen); pendingOpen = null; } }
+  const sc = e.target.closest('a[data-scroll]');
+  if (sc) { pendingScroll = sc.dataset.scroll; if (location.hash === '#services') { e.preventDefault(); smoothTo(document.getElementById(pendingScroll)); pendingScroll = null; } }
+  const a = e.target.closest('a[href^="#"]');
+  if (a && a.getAttribute('href') === location.hash && !op && !sc) { e.preventDefault(); scrollTop(); }
+});
+
+/* Header + mobile menu */
+const hdr = document.getElementById('hdr');
+const onScroll = () => hdr.classList.toggle('shrink', scrollY > 40);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+const burger = document.getElementById('burger'), mnav = document.getElementById('mnav');
+function closeMenu() { mnav.classList.add('hidden'); burger.setAttribute('aria-expanded', 'false'); }
+burger.addEventListener('click', () => { const open = mnav.classList.toggle('hidden') === false; burger.setAttribute('aria-expanded', open); });
+
+/* Catalog */
+const P = {
+  'addr-basic': { cat: '借址登記', name: '公司／商號登記地址', desc: '以美村路一段22號7樓作為公司或商號的營業登記地址，提供登記所需的租賃契約與相關證明文件。適合居家工作、網路開店與外縣市企業設立台中據點。', spec: [['使用地址', '台中市西區美村路一段22號7樓'], ['適用對象', '有限公司、股份有限公司、商號'], ['提供文件', '租賃契約、房屋相關證明'], ['信件處理', '一般信件代收'], ['費用', '月繳 NT$ 1,xxx 起（示意）']], files: ['服務價目表', '登記文件清單'] },
+  'addr-mail': { cat: '借址登記', name: '登記地址＋信件代收', desc: '在登記地址之外加上信件與掛號代收，到件即通知，可自取或另約轉寄。重要公文不漏接。', spec: [['包含', '登記地址＋掛號／公文代收'], ['到件通知', '電話或 LINE'], ['轉寄', '可另約（費用另計，示意）'], ['費用', '月繳 NT$ 2,xxx 起（示意）']], files: ['服務價目表', '租賃契約範本'] },
+  'office-1': { cat: '辦公空間', name: '一人獨立辦公室', desc: '可上鎖的獨立空間，附辦公桌椅與收納，網路已建置，帶筆電即可進駐。可同時作為登記地址。', spec: [['容納人數', '1–2 人'], ['設備', '辦公桌椅、收納櫃、網路'], ['可登記', '是'], ['公共區域', '接待區、茶水區'], ['費用', '依空室與期間報價（示意）']], files: ['服務價目表', '租賃契約範本'] },
+  'office-team': { cat: '辦公空間', name: '2–4 人團隊辦公室', desc: '給小團隊的獨立辦公室，依人數配置座位，共用接待與會議資源，省下自租辦公室的裝潢與押金。', spec: [['容納人數', '2–4 人'], ['設備', '辦公桌椅、收納、網路'], ['可登記', '是'], ['費用', '依空室與期間報價（示意）']], files: ['服務價目表', '租賃契約範本'] },
+  'desk': { cat: '辦公空間', name: '共享座位', desc: '不需要固定辦公室，但偶爾要有地方專心工作或見客時使用。', spec: [['使用方式', '依時段／月方案（示意）'], ['設備', '座位、網路'], ['可登記', '可搭配借址方案'], ['費用', '洽詢（示意）']], files: ['服務價目表'] },
+  'meet-s': { cat: '會議空間', name: '小型會議室', desc: '適合 4–6 人的客戶簡報、面試、簽約。預約制，到場即可使用。', spec: [['容納人數', '4–6 人'], ['設備', '會議桌、螢幕／投影（示意）、白板'], ['預約方式', '電話或 LINE'], ['計費', '以小時計（示意）']], files: ['會議室使用須知', '服務價目表'] },
+  'meet-l': { cat: '會議空間', name: '中大型會議室', desc: '內部會議、教育訓練或小型說明會使用，可依需求調整桌型。', spec: [['容納人數', '依桌型（示意）'], ['設備', '投影、白板、會議桌'], ['預約方式', '電話或 LINE'], ['計費', '以小時／半日計（示意）']], files: ['會議室使用須知'] },
+  'setup': { cat: '行政代辦', name: '公司設立協助', desc: '從公司名稱預查、營業項目整理到設立登記送件的流程協助，搭配登記地址一起辦理更省事。', spec: [['內容', '名稱預查、文件準備、送件協助'], ['所需時間', '依主管機關審核而定'], ['費用', '洽詢（示意）']], files: ['登記文件清單'] },
+  'tax': { cat: '行政代辦', name: '記帳報稅轉介', desc: '公司成立後的記帳與營業稅申報，可協助轉介合作的記帳服務。', spec: [['內容', '記帳、營業稅申報轉介'], ['費用', '依記帳業者報價']], files: ['服務價目表'] }
+};
+const fileMap = { '服務價目表': '亞巨商務中心_服務價目表_示意.txt', '登記文件清單': '公司登記所需文件清單_示意.txt', '租賃契約範本': '租賃契約範本_示意.txt', '會議室使用須知': '會議室使用須知_示意.txt' };
+const pmodal = document.getElementById('pmodal'), amodal = document.getElementById('amodal');
+let lastFocus;
+function showModal(m) { lastFocus = document.activeElement; m.hidden = false; window.__lenis && window.__lenis.stop(); document.body.style.overflow = 'hidden'; m.querySelector('[data-close]').focus(); }
+function hideModal(m) { m.hidden = true; window.__lenis && window.__lenis.start(); document.body.style.overflow = ''; lastFocus && lastFocus.focus && lastFocus.focus(); }
+function openProduct(id) {
+  const d = P[id]; if (!d) return;
+  const card = document.querySelector(`#catalog [data-id="${id}"] img`);
+  const img = document.getElementById('pm-img'); img.src = card ? (card.currentSrc || card.src || '') : ''; img.alt = d.name;
+  document.getElementById('pm-cat').textContent = d.cat;
+  document.getElementById('pm-title').textContent = d.name;
+  document.getElementById('pm-desc').textContent = d.desc;
+  document.getElementById('pm-spec').innerHTML = d.spec.map(([k, v]) => `<tr class="border-b border-pine/15"><th class="w-28 py-3 pr-3 text-left align-top font-medium text-pine">${k}</th><td class="py-3 text-ink/80">${v}</td></tr>`).join('');
+  document.getElementById('pm-files').innerHTML = d.files.map(f => `<button data-dl="${fileMap[f]}" class="row-link press flex w-full items-center justify-between rounded-lg border border-pine/15 px-4 py-3 text-left text-sm transition-colors"><span class="flex items-center gap-3"><i data-lucide="file-down" class="h-4 w-4 text-steel"></i>${f}（示意）</span><i data-lucide="download" class="h-4 w-4"></i></button>`).join('');
+  document.getElementById('pm-quote').dataset.plan = d.name;
+  window.lucide && lucide.createIcons();
+  showModal(pmodal);
+}
+document.getElementById('catalog').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (b) openProduct(b.dataset.id); });
+document.getElementById('pm-quote').addEventListener('click', e => { const sel = document.getElementById('plan'); sel.value = e.currentTarget.dataset.plan; hideModal(pmodal); });
+document.querySelectorAll('[data-quote]').forEach(a => a.addEventListener('click', () => {}));
+document.querySelectorAll('.modal').forEach(m => m.addEventListener('click', e => { if (e.target === m || e.target.closest('[data-close]')) hideModal(m); }));
+addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.modal').forEach(m => !m.hidden && hideModal(m)); });
+
+/* Filter */
+document.getElementById('filters').addEventListener('click', e => {
+  const b = e.target.closest('[data-filter]'); if (!b) return;
+  document.querySelectorAll('#filters [data-filter]').forEach(x => x.setAttribute('aria-pressed', x === b));
+  const f = b.dataset.filter; const shown = [];
+  document.querySelectorAll('#catalog [data-id]').forEach(c => { const on = f === 'all' || c.dataset.cat === f; c.style.display = on ? '' : 'none'; if (on) shown.push(c); });
+  if (window.gsap && !reduce) gsap.fromTo(shown, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: 'power3.out', overwrite: true });
+  window.ScrollTrigger && ScrollTrigger.refresh();
+});
+
+/* Downloads (generated demo files) */
+const toast = document.getElementById('toast');
+function showToast(t) { toast.textContent = t; toast.style.opacity = 1; clearTimeout(toast._t); toast._t = setTimeout(() => toast.style.opacity = 0, 2400); }
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-dl]'); if (!b) return;
+  const name = b.dataset.dl;
+  try {
+    const blob = new Blob([`亞巨聯合商務中心\n${name.replace('.txt', '')}\n\n此為 demo 示意檔案，正式網站將提供實際文件。\n電話：04 2328 1008\n地址：台中市西區美村路一段22號7樓`], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch (err) {}
+  showToast('已下載：' + name.replace('.txt', ''));
+});
+
+/* News */
+document.querySelectorAll('[data-article]').forEach(b => b.addEventListener('click', () => {
+  const art = document.querySelector(`#articles [data-a="${b.dataset.article}"]`);
+  document.getElementById('a-body').innerHTML = art.innerHTML;
+  document.getElementById('wx-tip').classList.add('hidden');
+  amodal.dataset.title = art.querySelector('h2').textContent;
+  showModal(amodal);
+}));
+document.querySelectorAll('[data-share]').forEach(b => b.addEventListener('click', () => {
+  const u = encodeURIComponent(location.href), t = encodeURIComponent(amodal.dataset.title || '亞巨聯合商務中心');
+  const map = { fb: `https://www.facebook.com/sharer/sharer.php?u=${u}`, line: `https://social-plugins.line.me/lineit/share?url=${u}`, tw: `https://twitter.com/intent/tweet?url=${u}&text=${t}` };
+  if (b.dataset.share === 'wechat') { document.getElementById('wx-tip').classList.remove('hidden'); return; }
+  window.open(map[b.dataset.share], '_blank', 'noopener');
+}));
+
+/* Form */
+const form = document.getElementById('form'), ok = document.getElementById('ok'), err = document.getElementById('err');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const req = [...form.querySelectorAll('[required]')];
+  let bad = false;
+  req.forEach(f => { const empty = !f.value.trim(); f.classList.toggle('border-steel-deep', empty); f.setAttribute('aria-invalid', empty); if (empty) bad = true; });
+  err.classList.toggle('hidden', !bad);
+  if (bad) { req.find(f => !f.value.trim()).focus(); return; }
+  form.classList.add('hidden'); ok.classList.remove('hidden');
+  if (window.gsap && !reduce) gsap.from(ok, { y: 16, opacity: 0, duration: 0.5, ease: 'power3.out' });
+});
+document.getElementById('again').addEventListener('click', () => { form.reset(); ok.classList.add('hidden'); form.classList.remove('hidden'); form.querySelector('input').focus(); });
+
+route();
+</script>
+<div style="position:fixed;left:12px;bottom:12px;z-index:2147483000;background:rgba(17,17,17,.82);color:#fff;font:12px/1.4 system-ui,sans-serif;padding:6px 11px;border-radius:999px;pointer-events:none">Demo 示意・Morcept Design</div></body>
+</html>

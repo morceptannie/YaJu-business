@@ -1,0 +1,6 @@
+{
+  "name": "亞巨聯合商務中心官網 Demo",
+  "description": "亞巨聯合商務中心（Ya Ju Business Center）官方網站 Demo，採用 WordPress Enfold 經典簡約商務架構，提供辦公室出租、借址登記、會議室租賃及即時費用試算。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
